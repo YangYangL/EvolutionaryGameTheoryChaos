@@ -9,4 +9,7 @@ using SFML.
 
 Some known limititions are the time it takes to calculate particularly large grids, and the time it takes to read them.
 
+This code depends on SFML 2.x
+Visit www.sfml-dev.org for more information
+
 
