@@ -1,0 +1,3 @@
+The heirarchy for these classes is as follows:
+
+Player->PlayerGrid->FileWriter->FileReader->DrawableGrid->GridVisualization
