@@ -112,7 +112,7 @@ void DrawableGrid::mapColors()
 }
 void DrawableGrid::mapColors(int generation)
 {
-	assert(generation > 0);
+	assert(generation >= 0);
 	if (generation > 999)
 	{
 		currentGenIndex = 0;
