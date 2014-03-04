@@ -1,12 +1,16 @@
 #include <SFML/System.hpp>
+#include <SFML/Graphics.hpp>
+
 #include <vector>
-#include <cstdlib>
-#include <iostream>
 #include <string>
+
+#include <iostream>
 #include <sstream>
 #include <fstream>
+
 #include <cassert>
-#include <SFML/Graphics.hpp>
+#include <ctime>
+#include <cstdlib>
 
 /*
 Finds the highest of eight values
