@@ -62,8 +62,17 @@ public:
 	*/
 	void resetSum();
 	/*
-	Plays a Prisoner's Dilemma with another player, modifying the value of genSum
-	based on the currentStrategy fields of both objects
+	Plays a modified prisoner's dilemma with other
+	Uses the current strategy field as the strategy
+	0 = cooperate, 1 = defect
+	Payoffs are only for PLAYER 1
+	Does not affect other player
+	0-0 = 1
+	0-1 = 0
+	1-0 = 1.9
+	1-1 = 0
+	
+	NOTE: the value of 1-0, or Defect/Cooperate can be changed
 	*/
 	void playGame(Player other);
 	/*
