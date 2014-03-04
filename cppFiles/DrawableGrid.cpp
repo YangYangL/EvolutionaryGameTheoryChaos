@@ -118,6 +118,15 @@ void DrawableGrid::mapColors(int generation)
 		currentGenIndex = 0;
 		reset();
 	}
+	bool backwards;
+	if (currentGenIndex > generation || currentGenIndex == generation)
+	{
+		backwards = false;
+	}
+	else
+	{
+		backwards = true;
+	}
 	currentGenIndex = generation;
 	//sf::Clock timer;
 	std::vector<int> genData = data.getData(generation);
@@ -185,7 +194,8 @@ void DrawableGrid::mapColors(int generation)
 			}
 		}
 	}
-	advance();
+	if (!backwards)
+		advance();
 	//std::cout << "\nColor Mapping took: " << timer.getElapsedTime().asSeconds() << " seconds\n";
 }
 void DrawableGrid::advance()
