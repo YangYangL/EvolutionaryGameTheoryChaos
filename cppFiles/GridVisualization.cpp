@@ -6,7 +6,7 @@ GridVisualization::GridVisualization(std::string grid_type, int mode, int size) 
 	mWindowDimensions = sf::Vector2f(size, size);
 	sf::Clock timer;
 	grid.createData(1000,true);
-	std::cout << "Creating Grid took " << timer.getElapsedTime().asSeconds() / 60 << " minutes\n";
+	//std::cout << "Creating Grid took " << timer.getElapsedTime().asSeconds() / 60 << " minutes\n";
 }
 void GridVisualization::run()
 {
